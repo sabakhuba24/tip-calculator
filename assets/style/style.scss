@@ -1,0 +1,114 @@
+body {
+    background-color: #C5E4E7;
+    font-family: monospace;
+}
+
+.tip-calculator {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #5E7A7D;
+    font-size: 16px;
+    width: 60%;
+    &-input {
+        margin-left: 10px;
+    }
+    &-top{
+        padding: 20px 0px;
+        input {
+            width: 90%;
+            background-color: #F3F9FA;
+        }
+       
+    }
+
+    &-mid {
+        padding: 20px 0px;
+       &-tips{
+        &_item{
+            button {
+                font-size: 24px;
+                margin-top: 10px;
+                width: 90%;
+                padding: 20px 0px;
+                background-color: #00474B;
+                color: #fff;
+                &:hover{
+                    background-color: #26C2AE;
+                    color: #00474B;
+                }
+            }
+            input {
+                margin-top: 10px;
+                font-size: 24px;
+                width: 90%;
+                padding: 20px 0px;
+            }
+        }
+       } 
+    }
+
+    &-bottom {
+        padding: 20px 0px;
+        .error {
+            border: 1px solid red;
+            &-text {
+                color: red;
+            }
+        }
+    }
+
+    &-result {
+        padding: 20px 0px;
+        &_content {
+            border-radius: 30px;
+            background-color: #00474B;
+            margin-top: 10px;
+            width: 80%;
+            padding: 50px 0;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+        &-top {
+            &_item {
+                font-size: 1rem;
+                color: #fff;
+                @media only screen and (max-width: 600px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .secondary-text {
+                    font-size: 1rem;
+                    color: #7F9D9F;
+                }
+                &-text {
+                    width: 100px;
+                    @media only screen and (max-width: 600px) {
+                        text-align: center;
+                    }
+                }
+                &-amount {
+                    font-weight: bold;
+                    color: #26C2AE;
+                    font-size: 3rem;
+                }
+            }
+         
+        }
+        
+        &-bottom {
+            margin-top: 100px;
+            button {
+                color: #00474B;
+                background-color: #26C2AE;
+                font-size: 20px;
+                width: 70%;
+                &:hover{
+                    background-color: #9FE8DF;
+                    color: #00474B;
+                }
+            }
+        }
+    }
+}
